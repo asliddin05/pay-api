@@ -1,0 +1,231 @@
+// hero
+
+.wrapper {
+    position: relative;
+    background-image: url(../../img/header__bg.png);
+    background-repeat: no-repeat;
+    background-position:  right -550px top -500px;
+}
+.hero {
+    padding-bottom: 75.57px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content {
+    max-width: 546px;
+}
+
+.hero__title {
+    color: $san-juan-blue;
+    font-family: DM Serif Display;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.554px;
+    margin-bottom: 40px;
+}
+
+.hero__form {
+    @include form;
+}
+.hero__form2 {
+    display: none;
+}
+.hero__input {
+    @include email;
+}
+
+.hero__bottom_text {
+    color: $san-juan-blue;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.69;
+}
+
+.hero__link {
+    color: $san-juan-blue;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.hero__btn {
+    @include button(absolute);
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.hero__img_block {
+    position: relative;
+}
+
+.hero__box {
+    position: absolute;
+    padding: 16px;
+    max-width: 212px;
+    margin-inline: 5px;
+    border-radius: 5px;
+    background: $water-white;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    top: 40%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 3px;
+}
+
+.hero__inner_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.hero__box_title {
+    color: $dark-pink;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.hero__box__top_text {
+    color: $san-juan-blue;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.hero__box_text {
+    color: #36536B;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.hero__box_span {
+    font-weight: 700
+}
+@media screen and (max-width:1100px) {
+    .hero__container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .hero__form {
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .hero__bottom_text {
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        font-style: normal;
+        text-align: center;
+        line-height: 56px;
+        letter-spacing: -0.369px;
+    }
+
+    .hero__img_block {
+        max-width: 300px;
+    }
+
+    .hero__img {
+        margin-left: 13px;
+    }
+
+    .hero__box {
+        width: 150px;
+        top: 40%;
+        left: 46.5%;
+        padding: 10px;
+        margin-inline: 5px;
+    }
+
+    .hero__box_title,
+    .hero__box__top_text {
+        font-size: 7px;
+    }
+
+    .hero__box_text {
+        font-size: 7px;
+        line-height: 8.5px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .wrapper {
+        background-image: url(../../img/backkground_bg2.svg);
+        background-position: top center;
+    }
+}
+@media screen and (max-width: 540px) {
+    .hero__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .hero__form {
+        display: none;
+    }
+    .hero__form2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    .hero__input2 {
+        @include form;
+        @include email;
+        margin: 0 auto;
+        width: 100%;
+        border: none;
+        outline: none;
+        margin-bottom: 16px;
+    }
+    .hero__btn2 {
+        @include button(static);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .hero__box {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .hero__box {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 288px) {
+    .hero__box {
+        width: 110px;
+        top: 44%;
+    }
+}
+
+@media screen and (max-width: 262px) {
+    .hero__box {
+        width: 100px;
+        top: 44%;
+    }
+}
+@media screen and (max-width: 245px) {
+    .hero__box {
+        width: 90px;
+        left: 48%;
+        top: 50%;
+    }
+}
+@media screen and (max-width: 225px) {
+    .hero__box {
+        width: 80px;
+        left: 48%;
+        top: 50%;
+    }
+}

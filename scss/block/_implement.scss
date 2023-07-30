@@ -1,0 +1,59 @@
+// implement
+
+.implement {
+    padding-block: 150px;
+}
+
+.implement__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.implement__content {
+    max-width: 445px;
+}
+
+.implement__title {
+    @include title($san-juan-blue);
+}
+
+.implement__text {
+    @include text($light-san-juan-blue);
+}
+
+@media screen and (max-width: 1095px) {
+    .implement {
+        padding-block: 100px;
+    }
+    .implement__container {
+        flex-direction: column;
+    }
+
+    .implement__img_block {
+        margin-left: 37px;
+    }
+
+    .implement__content {
+        text-align: center;
+    }
+
+    .implement__title {
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: -0.277px;
+    }
+
+}
+@media screen and (max-width: 437px) {
+    .implement {
+        padding-block: 80px;
+    }
+    .implement__img_block {
+        margin-left: 20px;
+    }
+    .implement__title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}

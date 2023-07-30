@@ -1,0 +1,53 @@
+// simple
+.bg {
+    background-image: url(../../img/bg.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.simple__container {
+    display: flex;
+    align-items: center;
+}
+.simple__content {
+    max-width: 445px;
+    margin-right: 0;
+}
+.simple__title {
+    @include title($san-juan-blue);
+}
+.simple__text {
+    @include text($san-juan-blue);
+}
+.simple__img_block {
+    max-width: 603px;
+    display: flex;
+}
+.simple__img2 {
+    margin-left: -90px;
+}
+
+@media screen and (max-width: 1190px) {
+    .simple__container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .simple__img_block {
+        max-width: 445px;
+        margin: 0 auto;
+    }
+    .simple__img1,
+    .simple__img2 {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bg {
+        background-image: none;
+    }
+    .simple__img_block {
+        flex-direction: column;
+    }
+    .simple__title {
+        font-size: 36px;
+    }
+}

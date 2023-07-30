@@ -1,0 +1,66 @@
+@mixin link($color) {
+    color: $color;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.69;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+@mixin button($position) {
+    position: $position;
+    border-radius: 24px;
+    background: $dark-pink;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    padding: 16px 24.5px 14px 26.5px;
+    color: $water-white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    transition: all 0.4s ease;
+
+    &:hover {
+        background-color: $charm-pink;
+    }
+}
+@mixin form {
+    position: relative;
+    max-width: 445px;
+    border-radius: 24px;
+    background-color: $water-white;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    padding: 16px 0 14px 27px;
+    margin-bottom: 16px;
+}
+@mixin email {
+    border: none;
+    outline: none;
+    max-width: 445px;
+    color: $san-juan-blue;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 1;
+    &::placeholder {
+        color: $san-juan-blue;
+        font-size: 15px;
+        font-weight: 700;
+        opacity: 0.5;
+    }
+}
+@mixin title($color) {
+    color: $color;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+    margin-bottom: 24px;
+}
+@mixin text($color) {
+    color: $color;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.69;
+}

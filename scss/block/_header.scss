@@ -1,0 +1,57 @@
+// header
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 74px;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.background_img {
+    position: absolute;
+    max-width: 780px;
+    height: 780px;
+    display: block;
+    background: red;
+    background-image: url(../../img/header__bg.png);
+    z-index: 999;
+}
+.header__logo_block {
+    width: 135px;
+    margin-right: 64px;
+}
+
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__link {
+    @include link($san-juan-blue);
+}
+
+.header__btn_block {
+    margin-left: auto;
+}
+
+.header__btn {
+    @include button(static);
+}
+.header__btn_burger {
+    width: 28px;
+    height: 17px;
+    background-image: url(../../img/burger.svg);
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .header__list {
+        display: none;
+    }
+    .header__btn {
+        display: none;
+    }
+    .header__btn_burger {
+        display: block;
+    }
+}

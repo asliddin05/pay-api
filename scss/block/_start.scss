@@ -1,0 +1,65 @@
+// start
+
+.start {
+    padding-bottom: 96px;
+}
+.start__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.start__content {
+    max-width: 445px;
+}
+.start__title {
+    @include title($san-juan-blue);
+    text-align: center;
+}
+.start__form {
+    @include form;
+    width: 445px;
+}
+.start__input {
+    @include email;
+}
+.start__form2 {
+    display: none;
+}
+.start__input2 {
+    @include form;
+    @include email;
+    margin-bottom: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.start__btn2 {
+    @include button(static);
+    width: 100%;
+}
+.start__btn {
+    @include button(absolute);
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+@media screen and (max-width: 950px) {
+    .start__container {
+        flex-direction: column;
+    }
+    .start__content {
+        margin-bottom: 40px;
+    }
+    .start__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .start__form2 {
+        display: block;
+    }
+    .start__form {
+        display: none;
+    }
+}
